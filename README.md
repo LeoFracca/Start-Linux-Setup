@@ -3,7 +3,7 @@
 I wrote this script for automize the installation of all the programs I used frequently and configure settings in my way.
 
 ## Installation
-- Find what package manager your system uses (**apt**, **dnf**, (soon I will add the support to **pacman**), ...)
+- Find what package manager your system uses (**apt**, **dnf**, (soon I will add the support for **pacman**), ...)
   - For example if you use Ubuntu you need to select **apt**, if you use Fedora you need to select **dnf**.
 - Copy and paste one of these command in your terminal:
   - If your system uses **apt**:
