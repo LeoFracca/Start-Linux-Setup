@@ -11,13 +11,13 @@ I wrote this script for automize the installation of all the programs I used fre
 git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
 
-  - If your system uses **dnf**:
+  - - If your system uses **dnf**:
 ```
 git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
 
 ## Additional information
 I personally used this script  on Ubuntu and Fedora, where it works correctly, but I'm not sure for other systems. If it doesn't work on your system contact me and I'll try to fix it.
-# Contacts
+## Contacts
 - Telegram: https://t.me/Il_secco
 - Mail: leonardofraccaroli1999@gmail.com
