@@ -8,12 +8,12 @@ I wrote this script for automize the installation of all the programs I used fre
 - Copy and paste one of these command in your terminal:
   - If your system uses **apt**:
 ```
-git clone https://github.com/LeoFracca/Start-Linux-Setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
+git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
 
   - If your system uses **dnf**:
 ```
-git clone https://github.com/LeoFracca/Start-Linux-Setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
+git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
 
 ## Additional information
