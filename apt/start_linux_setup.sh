@@ -122,7 +122,7 @@ sudo apt update -y && sudo apt upgrade -y
 echo "Done. All programs installed!"
 
 # Reboot?
-read -p "Do you want reboot? (y/n): " reboot
+read -p "To apply all changes a reboot is required. Do you want reboot? [y/n]: " reboot
 if [ $reboot == "y" ]
 then
 	reboot
