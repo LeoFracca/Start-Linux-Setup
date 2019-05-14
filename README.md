@@ -13,7 +13,7 @@ git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Set
 
   - - If your system uses **dnf**:
 ```
-git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
+git clone https://github.com/leofracca/start-linux-setup && cd Start\ Linux\ Setup/dnf/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
 
 ## Additional information
