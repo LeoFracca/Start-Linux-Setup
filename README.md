@@ -3,35 +3,21 @@
 I wrote this script for automize the installation of all the programs I used frequently and configure settings in my way.
 
 ## Installation
-- First clone the repository:
-```
-git clone https://github.com/LeoFracca/Start-Linux-Setup
-```
-
-- Then, move into the directory:
-```
-cd Start\ Linux\ Setup/
-```
-
-- Now you have to know if you use **apt** or **dnf** (soon I will add the support to **pacman**).
+- Find what package manager your system uses (**apt**, **dnf** (soon I will add the support to **pacman**), ...)
   - For example if you use Ubuntu you need to select **apt**, if you use Fedora you need to select **dnf**.
-
-- So, move into the correct directory (apt/ or dnf/):
+- Copy and paste one of these command in your terminal:
+  - If your system uses **apt**:
 ```
-cd apt/
-```
-  if you use apt, or
-```
-cd dnf/
-```
-  if you use dnf.
-  
-- Now you have to make the file executable:
-```
-chmod +x start_linux_setup.sh
+git clone https://github.com/LeoFracca/Start-Linux-Setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
 
-- Then run the script with
+  - If your system uses **dnf**:
 ```
-./start_linux_setup.sh
+git clone https://github.com/LeoFracca/Start-Linux-Setup && cd Start\ Linux\ Setup/apt/ && chmod +x start_linux_setup.sh && ./start_linux_setup.sh
 ```
+
+## Additional information
+I personally used this script  on Ubuntu and Fedora, where it works correctly, but I'm not sure for other systems. If it doesn't work on your system contact me and I'll try to fix it.
+# Contacts
+- Telegram: https://t.me/Il_secco
+- Mail: leonardofraccaroli1999@gmail.com
