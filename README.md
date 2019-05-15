@@ -8,12 +8,12 @@ I wrote this script to automize the installation of all the programs I use frequ
 - Copy and paste one of these command-lines to your terminal:
   - If your system uses **apt**:
 ```
-git clone https://github.com/leofracca/start-linux-setup && cd linux-first-setup/apt/ && chmod +x install.sh && ./install.sh
+git clone https://github.com/leofracca/linux-first-setup && cd linux-first-setup/apt/ && chmod +x install.sh && ./install.sh
 ```
 
   - - If your system uses **dnf**:
 ```
-git clone https://github.com/leofracca/start-linux-setup && cd linux-first-setup/dnf/ && chmod +x install.sh && ./install.sh
+git clone https://github.com/leofracca/linux-first-setup && cd linux-first-setup/dnf/ && chmod +x install.sh && ./install.sh
 ```
 
 ## Additional information
