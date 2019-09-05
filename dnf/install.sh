@@ -36,10 +36,6 @@ sudo dnf install -y chromium
 echo "Installing Git..."
 sudo dnf install -y git
 
-# Google Chrome: needs no introduction
-#echo "Installing Google Chrome..."
-#sudo dnf install -y google-chrome-stable
-
 # Gimp: GNU Image Manipulation Program
 echo "Installing Gimp..."
 sudo dnf install -y gimp
@@ -76,6 +72,7 @@ flatpak install -y flathub com.visualstudio.code # using flatpak
 
 # EXTENSIONS (only for GNOME)
 if [ "$DESKTOP_SESSION" = "gnome" ]
+then
   # Gnome Tweaks: program that allows you to customize Gnome
   echo "Installing Gnome Tweaks..."
   sudo dnf install -y gnome-tweaks
@@ -99,7 +96,9 @@ if [ "$DESKTOP_SESSION" = "gnome" ]
   cd materia-theme
   sudo ./install.sh
   cd
-
+  # Flat Remix Theme and Flat Remix Icon Theme
+  echo "Installing Flat Remix Theme..."
+  sudo dnf install -y flat-remix-theme
   # Adapta Theme
   echo "Installing Adapta Theme..."
   sudo dnf install -y adapta-gtk-theme
@@ -116,13 +115,13 @@ if [ "$DESKTOP_SESSION" = "gnome" ]
   cd
 
   # APPLYING
-  # Theme (Materia-dark-compact)
-  gsettings set org.gnome.desktop.interface gtk-theme 'Materia-dark-compact'
+  # Theme
+  gsettings set org.gnome.desktop.interface gtk-theme 'Flat-Remix-GTK-Yellow-Dark-Solid'
   #gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
-  # Cursor (Breeze-Snow)
+  # Cursor
   gsettings set org.gnome.desktop.interface cursor-theme 'Breeze-Adapta'
-  # Icon pack (Papirus-Dark)
-  gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+  # Icon pack
+  gsettings set org.gnome.desktop.interface icon-theme 'Flat-Remix-Yellow'
   # Top bar
   # gsettings set org.gnome.shell.extensions.user-theme name 'Materia-dark-compact'
 fi
@@ -134,8 +133,8 @@ sudo dnf upgrade -y
 echo "Done. All programs installed!"
 
 # Reboot?
-read -p "To apply all changes a reboot is required. Do you want reboot? [y/n]: " reboot
-if [ $reboot == "y" ]
+read -p "To apply all changes a reboot is required. Do you want reboot? [y/n]: " var_reboot
+if [ $var_reboot == "y" || $var_reboot == "Y" ]
 then
 	reboot
 else
