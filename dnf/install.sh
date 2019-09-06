@@ -134,7 +134,7 @@ echo "Done. All programs installed!"
 
 # Reboot?
 read -p "To apply all changes a reboot is required. Do you want reboot? [y/n]: " var_reboot
-if [ $var_reboot == "y" || $var_reboot == "Y" ]
+if [ $var_reboot == "y" ] || [ $var_reboot == "Y" ]
 then
 	reboot
 else
