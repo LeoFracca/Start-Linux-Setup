@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd
+
 # If it is equal to 0 you are root
 # This script must be run as a normal user
 if [ "$EUID" = 0 ]
@@ -110,9 +112,6 @@ then
   # Breeze Cursor
   echo "Installing Breeze Cursor..."
   sudo dnf install -y breeze-cursor-theme
-  # Breeze-Adapta Cursor
-  git clone https://github.com/mustafaozhan/Breeze-Adapta.git && cd Breeze-Adapta && chmod +x install.sh && sh install.sh
-  cd
 
   # APPLYING
   # Theme
