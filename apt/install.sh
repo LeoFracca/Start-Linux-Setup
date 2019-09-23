@@ -69,6 +69,15 @@ sudo apt install -y telegram-desktop
 echo "Installing Visual Studio Code..."
 sudo snap install --classic code # using snap
 
+# Oh My Zsh: it is an open source, community-driven framework for managing your zsh configuration
+echo "Installing Oh My Zsh..."
+sudo dnf install -y zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # zsh autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting # zsh syntax highlighting
+chsh -s $(which zsh)
+nano ~/.zshrc
+
 ############################################
 
 # EXTENSIONS (only for GNOME)
@@ -112,9 +121,9 @@ then
   gsettings set org.gnome.desktop.interface gtk-theme 'Flat-Remix-GTK-Yellow-Dark-Solid'
   #gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'
   # Cursor
-  gsettings set org.gnome.desktop.interface cursor-theme 'Breeze-Adapta'
+  gsettings set org.gnome.desktop.interface cursor-theme 'Breeze_Snow'
   # Icon pack
-  gsettings set org.gnome.desktop.interface icon-theme 'Flat-Remix-Yellow'
+  gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
   # Top bar
   # gsettings set org.gnome.shell.extensions.user-theme name 'Materia-dark-compact'
 fi
