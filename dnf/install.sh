@@ -58,6 +58,10 @@ sudo dnf install -y nano
 echo "Installing Neofetch..."
 sudo dnf install -y neofetch
 
+# Simple Screen Recorder: a screen recorder for Linux
+echo "Installing Simple Screen Recorder..."
+sudo dnf install -y simplescreenrecorder
+
 # Spotify: music player
 echo "Installing Spotify..."
 flatpak install -y flathub com.spotify.Client # using flatpak

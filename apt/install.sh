@@ -57,6 +57,10 @@ sudo apt install -y nano
 echo "Installing Neofetch..."
 sudo apt install -y neofetch
 
+# Simple Screen Recorder: a screen recorder for Linux
+echo "Installing Simple Screen Recorder..."
+sudo apt install -y simplescreenrecorder
+
 # Spotify: music player
 echo "Installing Spotify..."
 sudo snap install spotify # using snap
